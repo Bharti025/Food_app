@@ -1,0 +1,179 @@
+/* Header.css */
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  max-width: 100%;
+}
+
+.header-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+.header-content h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.header-content p {
+  color: wheat;
+  font-size: 1vw;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.header-content button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1vw;
+}
+
+.header-content button:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1050px) {
+  .header {
+    height: 38vw;
+    margin: 25px auto;
+  }
+  
+  .header-content {
+    max-width: 45%;
+    gap: 1.2vw;
+  }
+  
+  .header-content p {
+    font-size: 1.1vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 42vw;
+  }
+  
+  .header-content {
+    max-width: 55%;
+    left: 5vw;
+  }
+  
+  .header-content h2 {
+    font-size: max(4vw, 20px);
+  }
+  
+  .header-content p {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 45vw;
+    margin: 20px auto;
+  }
+  
+  .header-content {
+    max-width: 65%;
+    gap: 1vw;
+  }
+  
+  .header-content p {
+    display: none;
+  }
+  
+  .header-content button {
+    padding: 2vw 4vw;
+    font-size: max(2vw, 12px);
+  }
+}
+
+@media (max-width: 550px) {
+  .header {
+    height: 50vw;
+    margin: 15px auto;
+  }
+  
+  .header-content {
+    max-width: 70%;
+    left: 4vw;
+    bottom: 8%;
+  }
+  
+  .header-content h2 {
+    font-size: max(3.5vw, 18px);
+  }
+  
+  .header-content button {
+    padding: 2.5vw 5vw;
+    font-size: max(2.5vw, 11px);
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    height: 55vw;
+  }
+  
+  .header-content {
+    max-width: 75%;
+    left: 3vw;
+    bottom: 5%;
+  }
+  
+  .header-content h2 {
+    font-size: max(3.2vw, 16px);
+  }
+  
+  .header-content button {
+    padding: 3vw 6vw;
+  }
+}
+
+/* For very small devices in landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header {
+    height: 60vw;
+  }
+  
+  .header-content {
+    bottom: 5%;
+  }
+  
+  .header-content h2 {
+    font-size: max(3vw, 16px);
+  }
+  
+  .header-content p {
+    font-size: 1.5vw;
+  }
+}
