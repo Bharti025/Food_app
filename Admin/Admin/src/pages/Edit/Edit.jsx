@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { useParams, useNavigate } from "react-router-dom"; // For routing
 
 function Edit() {
-  const url = "http://localhost:4000";
+  const url = "https://food-app-backend-l63s.onrender.com";
   const { id } = useParams(); // Get the food item id from the URL
   const navigate = useNavigate(); // To navigate after success
 
