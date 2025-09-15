@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 
 
 function List() {
-  const url = "http://localhost:4000";
+  const url = "https://food-app-backend-l63s.onrender.com";
   const [list, setList] = useState([]);
    const navigate=useNavigate();
   useEffect(() => {
