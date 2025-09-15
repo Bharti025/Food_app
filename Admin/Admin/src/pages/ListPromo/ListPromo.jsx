@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 function ListPromo() {
-  const url ="http://localhost:4000";
+  const url ="https://food-app-backend-l63s.onrender.com";
   const [list, setList] = useState([]);
 
   useEffect(() => {
